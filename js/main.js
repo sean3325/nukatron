@@ -1,3 +1,25 @@
+var myContainer = document.getElementById("my-container");
+
+var ourRequest = new XMLHttpRequest();
+ourRequest.open('GET', 'https://cdn.rawgit.com/sean3325/nukatron/6c9fcf0d/history.json');
+ourRequest.onload = function() {
+  var ourData = JSON.parse(ourRequest.responseText);
+  renderHTML(ourData);
+};
+ourRequest.send();
+
+function renderHTML(data) {
+  var htmlString = "";
+
+  for (i = 0; i < data.length; i++) {
+    htmlString += "<div>" + "<h2>" + data[i].name + "</h2>" + "<p>" + data[i].status + "</p>" + "<p>" + data[i].message + "</p>" + "</div>";
+  }
+
+  myContainer.insertAdjacentHTML('beforeend', htmlString);
+
+}
+
+/*
 const CHART = document.getElementById("LineChart");
 let LineChart = new Chart(CHART, {
   type: 'line',
@@ -59,3 +81,18 @@ let LineChart = new Chart(CHART, {
     }
   }
 });
+*/
+
+/*
+$.ajax({
+  url: 'history.json',
+  dataType: 'json',
+  type: 'get',
+  cache: false,
+  success: function(data) {
+    $(data.services).each(function (index, value) {
+      console.log(value.name);
+    });
+  }
+});
+*/
