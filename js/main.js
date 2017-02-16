@@ -13,11 +13,22 @@ function renderHTML(data) {
   var htmlString = "";
   var chartData = {
     "type":"line",
+    "title":{
+      "text":"Historical status over the last 30 days",
+    },
+    scaleX:{
+   	  markers:[
+   	    {
+   	      type: "area",
+   	      range: [0,169]
+   	    }
+   	  ]
+   	},
     "series": data
   };
 
   for (i = 0; i < data.length; i++) {
-    htmlString += '<div class="alert">' + "<h2>" + data[i].name + "</h2>" + "<p>" + data[i].status + "</p>" + "<p>" + data[i].message + "</p>" + "</div>";
+    htmlString += '<div class="alert">' + "<h2>" + data[i].name + "</h2>" + "<strong>" + data[i].status + "</strong>" + "<p>" + data[i].message + "</p>" + "</div>";
   }
 
   myContainer.insertAdjacentHTML('beforeend', htmlString);

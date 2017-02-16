@@ -1,0 +1,25 @@
+{
+  "name": "nukatron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean3325/nukatron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sean3325/nukatron/issues"
+  },
+  "homepage": "https://github.com/sean3325/nukatron#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}
