@@ -1,11 +1,11 @@
-# nukatron
+# Nukatron
 
-This is an imaginary status page for the Nukatron application. To view the site simply run the following command in your terminal:
+This is a status page for the Nukatron application. To view the page, simply run the following commands in your terminal:
 
-`npm install`
+`$ npm install` 
 
 and
 
-`npm start`
+`$ npm start`
 
-Once the server is running go to `http://192.168.1.151:8080` in your browser.
+Once the server is up and running, go to `http://192.168.1.151:8080` in your browser.
