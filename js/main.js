@@ -16,6 +16,9 @@ function renderHTML(data) {
     "title":{
       "text":"Historical status over the last 30 days",
     },
+    "subtitle": {
+      "text":"The highlighted area represents the last 7 days of data"
+    },
     scaleX:{
    	  markers:[
    	    {
