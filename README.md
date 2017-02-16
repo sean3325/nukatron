@@ -1,4 +1,4 @@
-# nukatron
+# Nukatron
 
 This is an imaginary status page for the Nukatron application. To view the page, simply run the following commands in your terminal:
 
